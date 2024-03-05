@@ -130,3 +130,53 @@ font-weight: 600;
     text-decoration: underline;
 
 }
+
+/* Media query for screens smaller than 768px (portrait mode on most phones) */
+@media screen and (max-width: 768px) {
+
+    /* Adjust layout for smaller screens */
+  
+    .wrapper {
+      width: 90%; /* Adjust width to fit most screens */
+    }
+  
+    .input-box {
+      width: 100%; /* Make input box full width */
+    }
+  
+    .input-box i {
+      /* Adjust icon positioning for smaller screens */
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    #faceicon, #lockicon {
+      /* Adjust icons positioning for smaller screens */
+      right: 15px;
+    }
+  
+    .wrapper h1 {
+      font-size: 28px; /* Adjust heading size for smaller screens */
+    }
+  
+    .wrapper .input-box,
+    .wrapper .btn {
+      font-size: 14px; /* Adjust font size for better readability */
+    }
+  
+    .remember-forget {
+      flex-direction: column; /* Stack labels vertically */
+      margin: 10px 0;
+    }
+  
+    .remember-forget label,
+    .remember-forget a {
+      font-size: 13px; /* Adjust font size for smaller screens */
+    }
+  
+    .regester-link {
+      margin: 15px 0;
+    }
+  }
+  
